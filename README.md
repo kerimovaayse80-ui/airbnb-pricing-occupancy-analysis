@@ -150,6 +150,4 @@ Specific neighbourhood names and values should be taken from the final report vi
 4. Read `note.md` for detailed modelling decisions and measure explanations.
 5. Find the source datasets in the `data/` folder.
 
----
 
-*This project was developed for portfolio and analytical learning purposes. Findings should be interpreted in the context of the dataset, the report's active filters, and the limitations described above.*
