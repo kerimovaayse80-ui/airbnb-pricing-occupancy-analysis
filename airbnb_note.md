@@ -341,27 +341,11 @@ The supplied screenshot shows a selected neighbourhood with **234 active listing
 
 ## 8. Optional Bonus Features
 
-The report prioritizes the assignment’s core requirements: a star-schema-style model with a marked Date table, filter-responsive occupancy calculations, chronological month sorting, neighbourhood drill-through, report visuals, and documented investor insights. Optional bonus features are not required for the core submission.
 
 - **Map visual:** Added to the neighbourhood benchmark page. It uses latitude and longitude and a `price_color_group` legend. The current map colors individual listings by price category; it does not use a continuous colour scale for neighbourhood median price.
 - **Conditional formatting:** Implemented in the neighbourhood comparison table using `occupancy_color` to highlight occupancy relative to the median benchmark.
-- Other optional enhancements, such as a what-if price parameter, a dynamic TOPN selector, a bookmark-driven price/occupancy toggle, and Power BI Service publishing with scheduled refresh, are outside the current scope. The report does not claim these enhancements are implemented.
 
-## 9. Limitations and Assumptions
 
-- Overall occupancy is approximately **32.94%** under the current `is_booked` definition. The assignment reference of around 67% may represent availability share or use a different definition. The report retains the source mapping rather than inverting the flag to match the reference.
-- `available_nights` counts all calendar rows, including booked and available records, despite its name.
-- Calendar prices are blank for many booked dates, so actual booked revenue cannot be calculated reliably from calendar prices alone.
-- Estimated revenue potential uses listing-level price as a proxy for missing booked-date prices and must not be described as actual revenue.
-- The report is descriptive and does not establish causation or calculate full investment returns.
-- A complete investment analysis would require operating expenses, cleaning fees, taxes, platform fees, acquisition costs, local regulations, and verified booking revenue.
-- The map displays individual listing points and price bands, not an aggregated neighbourhood bubble map with a continuous median-price colour scale.
-- Top 5 and Bottom 5 results should be interpreted using the actual median-price filters and sort order.
 
-## 10. Submission Contents
 
-The assignment deliverables are:
-- `airbnb_report.pbix`
-- PNG exports of all report pages, including the drill-through page and map page if it remains separate
-- PNG export of the model view
-- This `note.md`, documenting data cleaning, model decisions, DAX formulas and rationale, occupancy definition, median-price methodology, five investor insights, and bonus-feature status
+
